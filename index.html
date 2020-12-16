@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+		<title>Test</title>
+	</head>
+	<body>
+		<input type="number" onchange="sendState()" id="StateNbr" value="0"></input>
+		
+		<script src="http://localhost:3000/socket.io/socket.io.js"></script>
+		<script>
+			const socket = io('http://localhost:3000');
+			
+			socket.on('M5stack', function(text){
+				alert(text);
+			});
+			
+			function sendState() {
+				socket.emit('message', 'State=' + document.getElementById("StateNbr").value);
+			}
+		</script>
+	</body>
+</html>
