@@ -22,4 +22,4 @@
   Si vous rencontré se probleme, il est probable que vous ayez essayé d'accéder au serveur web sur le port 3000 avec cette adresse [https://localhost:3000/](https://localhost:3000/). Le serveur web mis en place ne prend pas en charge le protocole HTTPS, la bonne adresse est donc [http://localhost:3000/](http://localhost:3000/)  
   
   ## Autres erreurs
-  En cas d'échecs vous pouvez aller dans l'onglet Issues
+  En cas d'échecs vous pouvez aller dans l'onglet [Issues](https://github.com/angerenage/SI_Ange/issues) et rédiger un rapport d'érreur. J'éssayerais de le regler le plus vite possible.  
