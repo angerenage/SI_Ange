@@ -9,6 +9,7 @@
   Vous pouvez utiliser [wamp](https://www.wampserver.com/) ou installer chaques composants un par un en installant [PHP](https://www.php.net/downloads) et [Apache](https://httpd.apache.org/download.cgi).  
 
   ## Lancer le serveur web
+  Pour mettre le serveur en ligne dans l'invite de commande tapé `cd chemin d'accès vers index.js` puis pour lancer le serveur tapez `node index.js` et le serveur du port 3000 est lancé, pour lancer le serveur sur le port 80 lancé wamp ou apache et PHP.  
   Il vous sufit de lancer votre navigateur et d'accéder a l'adresse [localhost sur le port 80](https://localhost/) pour le site internet ou [localhost sur le port 3000](https://localhost:3000/).  
   Pour pouvoir accéder au serveur web depuis le M5stack (si ils sont sur le même résau), il vous faudrat désactiver votre par-feu.  
 
