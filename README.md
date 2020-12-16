@@ -5,7 +5,7 @@
   Pour cela, accédez au site [node js](https://nodejs.org/fr/download/) et téléchargez-le pour votre système et installez-le.  
 
   ## Installer Le serveur web
-  Pour pouvoir afficher le site web il va falloir installer un serveur web comme Apache et php.  
+  Pour pouvoir afficher le site web il va falloir installer un serveur web comme Apache.  
   Vous pouvez utiliser [wamp](https://www.wampserver.com/) ou en installant [Apache](https://httpd.apache.org/download.cgi).  
 
   ## Lancer le serveur web
