@@ -14,6 +14,7 @@
   Il vous faut également changer la ligne `client.connect(IPAddress (192,168,22,70), 3000` en modifiant `192,168,22,70` par l'adresse IP de votre serveur.  
   __Il faut que les chiffres de l'adresse IP soit séparé par des virgules, `192,168,22,70` et non `192.168.22.70` !__
 
+-----------------
 
 # Principaux problèmes
 
