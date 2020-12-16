@@ -6,4 +6,4 @@
 
   ## Installer Le serveur web
   Pour pouvoir afficher le site web il va falloir installer un serveur web comme Apache et php.  
-  Vous pouvez wamp ou
+  Vous pouvez utiliser [wamp](https://www.wampserver.com/) ou installer chaques composants un par un en installant [PHP](https://www.php.net/downloads) et [Apache](https://httpd.apache.org/download.cgi).
