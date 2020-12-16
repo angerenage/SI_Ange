@@ -12,4 +12,4 @@
   ## Connecter le M5stack
   Pour connecter le M5stack a votre serveur web il faut modifier la ligne `WiFi.begin("SSID", "mot de passe");` il faut modifier le `SSID` avec le nom de votre réseau et `mot de passe` par le mot de passe de votre réseau.  
   Il vous faut également changer la ligne `client.connect(IPAddress (192,168,22,70), 3000` en modifiant `192,168,22,70` par l'adresse IP de votre serveur.  
-  __Il faut que les chiffres de l'adresse IP soit séparé par des virgules, 192,168,22,70 et non 192.168.22.70 !__
+  __Il faut que les chiffres de l'adresse IP soit séparé par des virgules, `192,168,22,70` et non `192.168.22.70` !__
