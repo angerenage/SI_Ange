@@ -19,4 +19,7 @@
 # Principaux problèmes ou choses a savoir
 
   ## ERR_SSL_PROTOCOL_ERROR
-  Si vous rencontré se probleme, il est probable que vous ayez essayé d'accéder au serveur web sur le port 3000 avec cette adresse [https://localhost:3000/](https://localhost:3000/). Le serveur web mis en place ne prend pas en charge le protocole HTTPS, la bonne adresse est donc [http://localhost:3000/](http://localhost:3000/)
+  Si vous rencontré se probleme, il est probable que vous ayez essayé d'accéder au serveur web sur le port 3000 avec cette adresse [https://localhost:3000/](https://localhost:3000/). Le serveur web mis en place ne prend pas en charge le protocole HTTPS, la bonne adresse est donc [http://localhost:3000/](http://localhost:3000/)  
+  
+  ## Autres erreurs
+  En cas d'échecs vous pouvez aller dans l'onglet Issues
