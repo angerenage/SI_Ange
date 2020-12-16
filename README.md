@@ -11,3 +11,7 @@
   ## Lancer le serveur web
   Il vous sufit de lancer votre navigateur et d'accéder a l'adresse [localhost sur le port 80](https://localhost/) pour le site internet ou [localhost sur le port 3000](https://localhost:3000/).  
   Pour pouvoir accéder au serveur web depuis le M5stack (si ils sont sur le même résau), il vous faudrat désactiver votre par-feu.  
+
+  ## Connecter le M5stack
+  Pour connecter le M5stack a votre serveur web il faut modifier la ligne `WiFi.begin("SSID", "mot de passe");` il faut modifier le `SSID` avec le nom de votre réseau et `mot de passe` par le mot de passe de votre réseau.  
+  
