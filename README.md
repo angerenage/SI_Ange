@@ -24,5 +24,5 @@
   ## Autres erreurs
   En cas d'échecs vous pouvez aller dans l'onglet [Issues](https://github.com/angerenage/SI_Ange/issues) et rédiger un rapport d'érreur. J'éssayerais de le regler le plus vite possible.  
   
-  ## Différentes branch
+  ## Différentes branches
   La branch `main` ne contient pas le code arduino, pour pouvoir y accéder rendez vous dans la branch `arduino` et le code est accéssible dans le dossier `bombe`.  
