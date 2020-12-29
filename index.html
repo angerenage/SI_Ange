@@ -4,18 +4,18 @@
 		<title>Test</title>
 	</head>
 	<body>
-		<input type="number" onchange="sendState()" id="StateNbr" value="0"></input>	<!-- Créé une entré pour un nombre qui quand il change appele la fonction sendState() -->
+		<input type="number" onchange="sendState()" id="StateNbr" value="0"></input>	<!-- Créer une entrée pour un numéro qui, lorsqu'il change, appelle la fonction sendState() -->
 		
-		<script src="http://localhost:3000/socket.io/socket.io.js"></script>	<!-- Importe la librairie Socket.io -->
+		<script src="http://localhost:3000/socket.io/socket.io.js"></script>	<!-- Importe la bibliothèque Socket.io -->
 		<script>
 			const socket = io('http://localhost:3000');	//fait référence au serveur sur le port 3000
 			
-			socket.on('M5stack', function(text){	//écoute la 'fréquence' M5stack
+			socket.on('M5stack', function(text){	//écoute la 'fréquence' du M5stack
 				alert(text);	//affiche le texte si un message est reçu sur la fréquence M5stack
 			});
 			
-			function sendState() {	//créé la fonction sendState
-				socket.emit('message', 'State=' + document.getElementById("StateNbr").value);	//envoie un message quand la fonction est appelé
+			function sendState() {	//définie la fonction sendState()
+				socket.emit('message', 'State=' + document.getElementById("StateNbr").value);	//envoie un message lorsque la fonction est appelée
 			}
 		</script>
 	</body>
