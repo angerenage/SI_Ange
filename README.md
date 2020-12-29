@@ -19,7 +19,7 @@
 # Principaux problèmes ou choses à savoir
 
   ## ERR_SSL_PROTOCOL_ERROR
-  Si vous avez rencontré ce problème, il est probable que vous ayez essayé d'accéder au serveur Web sur le port 3000 avec cette adresse [https://localhost:3000/](https:// localhost:3000/). Le serveur Web configuré ne prend pas en charge le protocole HTTPS, l'adresse correcte est donc [http://localhost:3000/](http://localhost:3000/)
+  Si vous avez rencontré ce problème, il est probable que vous ayez essayé d'accéder au serveur Web sur le port 3000 avec cette adresse [https://localhost:3000/](https://localhost:3000/). Le serveur Web configuré ne prend pas en charge le protocole HTTPS, l'adresse correcte est donc [http://localhost:3000/](http://localhost:3000/)
   
   ## Autres erreurs
   En cas d'échec, vous pouvez aller dans l'onglet [Issues](https://github.com/angerenage/SI_Ange/issues) et rédiger un rapport d'erreur. J'essaierai de le résoudre le plus tôt possible.
