@@ -10,7 +10,7 @@
   Pour pouvoir accéder au serveur Web à partir de la pile M5 (s'ils sont sur le même réseau), vous devrez désactiver votre pare-feu.
 
   ## Connectez le M5stack
-  Pour connecter le M5stack à votre serveur Web, modifiez la ligne `WiFi.begin("SSID", "password");` modifiez le `SSID` avec le nom de votre réseau et le` mot de passe` par votre mot de passe réseau.
+  Pour connecter le M5stack à votre serveur Web, modifiez la ligne `WiFi.begin("SSID", "password");` modifiez le `SSID` avec le nom de votre réseau et le `mot de passe` par votre mot de passe réseau.
   Vous devez également changer la ligne `client.connect(IPAddress (192,168,22,70), 3000` en modifiant `192,168,22,70` par l'adresse IP de votre serveur.
   __Les chiffres de l'adresse IP doivent être séparés par des virgules, «192,168,22,70» et non «192.168.22.70»! __
 
