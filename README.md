@@ -5,7 +5,7 @@
   Pour ce faire, allez sur le site de [node js](https://nodejs.org/en/download/) et téléchargez-le pour votre système puis installez-le.
 
   ## Démarrer le serveur Web
-  Pour mettre le serveur en ligne, dans l'invite de commande tapez `cd chemin jusqu'à index.js` puis pour démarrer le serveur tapez `node index.js` et le serveur sur le port 3000 est démarré.
+  Pour mettre le serveur en ligne, dans l'invite de commande tapez `cd chemin jusqu'à index.js` puis pour démarrer le serveur tapez  `node index.js` et le serveur sur le port 3000 est démarré.
   Il vous suffit de lancer dans votre navigateur le fichier `index.html` et [localhost sur le port 3000](http://localhost:3000/).
   Pour pouvoir accéder au serveur Web à partir du M5stack (s'ils sont sur le même réseau), vous devrez désactiver votre pare-feu.
 
