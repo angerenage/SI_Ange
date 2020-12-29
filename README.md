@@ -5,7 +5,7 @@
   Pour ce faire, allez sur le site [node js] (https://nodejs.org/en/download/) et téléchargez-le pour votre système et installez-le.
 
   ## Démarrer le serveur Web
-  Pour mettre le serveur en ligne dans l'invite de commande, tapez `cd path to index.js` puis pour démarrer le type de serveur` node index.js` et le serveur du port 3000 est démarré.
+  Pour mettre le serveur en ligne dans l'invite de commande, tapez `cd chemin jusqu'à index.js` puis pour démarrer le type de serveur` node index.js` et le serveur du port 3000 est démarré.
   Il vous suffit de lancer votre navigateur et d'accéder à l'adresse [localhost sur le port 80] (http: // localhost /) pour le site Web ou [localhost sur le port 3000] (http: // localhost: 3000 /).
   Pour pouvoir accéder au serveur Web à partir de la pile M5 (s'ils sont sur le même réseau), vous devrez désactiver votre pare-feu.
 
