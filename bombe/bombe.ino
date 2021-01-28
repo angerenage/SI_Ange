@@ -32,7 +32,7 @@ void setup() {
   pinMode(2, INPUT);
   pinMode(5, INPUT);
 
-  WiFi.begin("WOASWOEN", "woaswoen");
+  WiFi.begin("SSID", "password");
 
   while (WiFi.status() != WL_CONNECTED) {
     delay(1000);
@@ -63,7 +63,7 @@ void loop() {
 
     request("Button_Pressed");
     
-    delay(200);
+    delay(100);
   }
 
   if (digitalRead(5)) {
@@ -72,7 +72,7 @@ void loop() {
     
     request("Set_State.0");
     
-    delay(200);
+    delay(100);
   }
 
   delay(10);
