@@ -58,20 +58,16 @@ void loop() {
   M5.Lcd.println(result.substring(206));
 
   if (digitalRead(2)) {
-    
     M5.Lcd.println("button press");
-
     request("Button_Pressed");
-    
+    while (digitalRead(2)) {}
     delay(100);
+    request("Button_Unpressed");
   }
 
   if (digitalRead(5)) {
-    
     M5.Lcd.println("reset state");
-    
     request("Set_State.0");
-    
     delay(100);
   }
 
