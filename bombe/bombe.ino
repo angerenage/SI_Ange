@@ -68,7 +68,7 @@ void loop() {
 
   if (digitalRead(5)) {
     
-    M5.Lcd.println("off press");
+    M5.Lcd.println("reset state");
     
     request("Set_State.0");
     
