@@ -4,17 +4,22 @@
 		<title>Test</title>
 	</head>
 	<body>
-		<input type="number" onchange="sendState()" id="StateNbr" value="0"></input>	<!-- Créer une entrée pour un numéro qui, lorsqu'il change, appelle la fonction sendState() -->
+		<input type="number" onchange="sendState()" id="StateNbr" value="0"></input>		<!-- Créer une entrée pour un numéro qui, lorsqu'il change, appelle la fonction sendState() -->
 		
-		<script src="http://localhost:3000/socket.io/socket.io.js"></script>	<!-- Importe la bibliothèque Socket.io -->
+		<script src="http://localhost:3000/socket.io/socket.io.js"></script>			<!-- Importe la bibliothèque Socket.io -->
 		<script>
-			const socket = io('http://localhost:3000');	//fait référence au serveur sur le port 3000
+			const socket = io('http://localhost:3000');						//fait référence au serveur sur le port 3000
 			
-			socket.on('M5stack', function(text){	//écoute la 'fréquence' du M5stack
-				alert(text);	//affiche le texte si un message est reçu sur la fréquence M5stack
+			socket.on('M5stack', function(text){							//écoute la 'fréquence' du M5stack
+				if (text.split('.')[0] == "Set_State") {					//vérifie si la requête est du type 'Set_State'
+					document.getElementById("StateNbr").value = text.split('.')[1];		//Met a jour le champ affiché sur la page
+				}
+				else if (text == "Button_Pressed") {						//vérifie si la requête est du type 'Button_Pressed'
+					alert('Boutton pressé');						//affiche un message si le boutton est pressé
+				}
 			});
 			
-			function sendState() {	//définie la fonction sendState()
+			function sendState() {									//définie la fonction sendState()
 				socket.emit('message', 'State=' + document.getElementById("StateNbr").value);	//envoie un message lorsque la fonction est appelée
 			}
 		</script>
