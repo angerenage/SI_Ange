@@ -22,8 +22,8 @@
   ## ERR_SSL_PROTOCOL_ERROR
   Si vous avez rencontré ce problème, il est probable que vous ayez essayé d'accéder au serveur Web sur le port 3000 avec cette adresse [https://localhost:3000/](https://localhost:3000/). Le serveur Web configuré ne prend pas en charge le protocole HTTPS, l'adresse correcte est donc [http://localhost:3000/](http://localhost:3000/)
   
-  ## Autres erreurs
-  En cas d'échec, vous pouvez aller dans l'onglet [Issues](https://github.com/angerenage/SI_Ange/issues) et rédiger un rapport d'erreur. J'essaierai de le résoudre le plus tôt possible.
+  ## Autres erreurs ou messages
+  En cas d'échec ou de questions, vous pouvez aller dans l'onglet [Issues](https://github.com/angerenage/SI_Ange/issues) et rédiger un rapport. J'essaierai de vous répondre ou de résoudre le problème le plus tôt possible.
 
   ## Différentes branches
   La branche [`main`](https://github.com/angerenage/SI_Ange/) ne contient pas le code arduino, pour pouvoir y accéder, allez dans la branche [`arduino`](https://github.com/angerenage/SI_Ange/tree/arduino) et le code se trouve dans le dossier `bombe` et le fichier `bombe.ino`.
