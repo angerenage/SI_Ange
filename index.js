@@ -11,9 +11,9 @@ const socket = io_client("http://localhost/", {
 
 app.get("/", function(req, res) {				//S'exécute lorsqu'une requette est effectuée à la racine du serveur
 	res.send(state.toString());				//Répondre en envoyant la valeur de la variable State
-	if (typeof req.query['message'] !== 'undefined') {	//Vérifie si le paramètre message existe
-		io.emit('M5stack', req.query['message']);	//Envoie le message de l'arduino à tous les 'abonnés'
-		console.log(req.query['message']);		//Écrit dans la console
+	if (typeof req.query['request'] !== 'undefined') {	//Vérifie si le paramètre request existe
+		io.emit('M5stack', req.query['request']);	//Envoie le message du M5stack à tous les 'abonnés'
+		console.log(req.query['request']);		//Écrit dans la console
 	}
 });
 
