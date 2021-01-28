@@ -1,29 +1,9 @@
-# Configurer le serveur Web
+# Utiliser le M5stack avec l'IDE d'arduino
 
-  ## Installer Node js
-  Pour exécuter le serveur, vous devrez installer le node js.
-  Pour ce faire, allez sur le site de [node js](https://nodejs.org/en/download/) et téléchargez-le pour votre système puis installez-le.
-
-  ## Démarrer le serveur Web
-  Pour mettre le serveur en ligne, dans l'invite de commande tapez `cd chemin jusqu'à index.js` puis pour démarrer le serveur tapez  
-  `node index.js` et le serveur sur le port 3000 est démarré.
-  Il vous suffit de lancer dans votre navigateur le fichier `index.html` et [localhost sur le port 3000](http://localhost:3000/).
-  Pour pouvoir accéder au serveur Web à partir du M5stack (s'ils sont sur le même réseau), vous devrez désactiver votre pare-feu.
-
-  ## Connectez le M5stack
-  Pour connecter le M5stack à votre serveur Web, modifiez la ligne `WiFi.begin("SSID", "password");` modifiez le `SSID` avec le nom de votre réseau et le `mot de passe` par votre mot de passe réseau.
-  Vous devez également changer la ligne `client.connect(IPAddress (192,168,22,70), 3000` en modifiant `192,168,22,70` par l'adresse IP de votre serveur.  
-  __Les chiffres de l'adresse IP doivent être séparés par des virgules, `192,168,22,70` et non `192.168.22.70` !__
-
------------------
-
-# Principaux problèmes ou choses à savoir
-
-  ## ERR_SSL_PROTOCOL_ERROR
-  Si vous avez rencontré ce problème, il est probable que vous ayez essayé d'accéder au serveur Web sur le port 3000 avec cette adresse [https://localhost:3000/](https://localhost:3000/). Le serveur Web configuré ne prend pas en charge le protocole HTTPS, l'adresse correcte est donc [http://localhost:3000/](http://localhost:3000/)
-  
-  ## Autres erreurs
-  En cas d'échec, vous pouvez aller dans l'onglet [Issues](https://github.com/angerenage/SI_Ange/issues) et rédiger un rapport d'erreur. J'essaierai de le résoudre le plus tôt possible.
-
-  ## Différentes branches
-  La branche [`main`](https://github.com/angerenage/SI_Ange/) ne contient pas le code arduino, pour pouvoir y accéder, allez dans la branche [`arduino`](https://github.com/angerenage/SI_Ange/tree/arduino) et le code se trouve dans le dossier `bombe` et le fichier `bombe.ino`.
+  ## Installer l'IDE d'arduino
+  Commençon par installer le driver [CP210x](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers) une fois sur cette page il ne vous reste plus qu'à le télécharger et l'instaler.  
+  Pour installer l'IDE d'arduino d'arduino il vous suffie de vous rendre sur [le site web d'arduino](https://www.arduino.cc/en/software) et de le téléharger et installé le pour votre système.  
+  Une fois que vous avez le logiciel sur votre ordinateur, allez dans `Arduino` puis `Preferences` et copié __https://dl.espressif.com/dl/package_esp32_index.json__ dans `Additional board url`.  
+  Maintenant allez dans `Tools`, `Board` et `Boards manager` une fois que vous y êtes cherchez `__esp32__ by __Esspressif Syteme__` et installez le.  
+  Lorsque le téléchargement est fini vous pouvez aller dans `Tools` puis `Board` et enfin chercher `M5Stack-Core-ESP32`.  
+  Il vous faut encore téléchargé la librairie `M5Stack` que vous trouverez dans `Tools` et `Librairie Manager` une fois tout terminé vous pouvez maintenant utiliser votre M5stack avec l'IDE d'arduino.  
