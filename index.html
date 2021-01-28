@@ -4,8 +4,9 @@
 		<title>Test</title>
 	</head>
 	<body>
-		<input type="number" onchange="sendState()" id="StateNbr" value="0"></input>		<!-- Créer une entrée pour un numéro qui, lorsqu'il change, appelle la fonction sendState() -->
-		
+		<input type="number" onchange="sendState()" id="StateNbr" value="0"></input>		<!-- Créer une entrée pour un numéro qui lorsqu'il change appelle la fonction sendState() -->
+		<div id="BtnState" style="width: 20px; height: 20px; background-color: red;"></div>			<!-- Créer un carré rouge qui change de couleur si le boutton est pressé -->
+	
 		<script src="http://localhost:3000/socket.io/socket.io.js"></script>			<!-- Importe la bibliothèque Socket.io -->
 		<script>
 			const socket = io('http://localhost:3000');						//fait référence au serveur sur le port 3000
@@ -15,7 +16,10 @@
 					document.getElementById("StateNbr").value = text.split('.')[1];		//Met a jour le champ affiché sur la page
 				}
 				else if (text == "Button_Pressed") {						//vérifie si la requête est du type 'Button_Pressed'
-					alert('Boutton pressé');						//affiche un message si le boutton est pressé
+					document.getElementById("BtnState").style.backgroud_color = "green";	//affiche un message si le boutton est pressé
+				}
+				else if (text == "Button_Unpressed") {						//vérifie si la requête est du type 'Button_Pressed'
+					document.getElementById("BtnState").style.backgroud_color = "red";	//affiche un message si le boutton est pressé
 				}
 			});
 			
